@@ -52,9 +52,11 @@ model.compile(optimizer='adam',
 - Metrics digunakan untuk mengevaluasi langkah pelatihan dan pengujian 
 
 Selanjutnya data siap untuk dilatih.
+
 `model.fit(train_images, train_labels, epochs=10)`
 
 Kemudian akan dilakukan prediksi pada data uji
+
 `predictions = model.predict(test_images)`
 
 Kita juga dapat memprediksi sebuah gambar lain, misal kita memiliki gambar yang akan diprediksi dengan nama `img`, maka untuk memprediksinya
@@ -62,9 +64,11 @@ Kita juga dapat memprediksi sebuah gambar lain, misal kita memiliki gambar yang 
 img_pred = model.predict(img)
 ```
 Untuk mengetahui hasil prediksi kita bisa menggunakan
+
 `np.argmax(img_pred[0])`
 
 Nilai yang keluar adalah hasil prediksi sesuai kategori berikut urut dari 0-9
+
 `['T-shirt/top', 'Trouser', 'Pullover', 'Dress', 'Coat', 'Sandal', 'Shirt', 'Sneaker', 'Bag', 'Ankle boot']`
 
-Bila yang keluar adalah 1 maka hasil prediksi adalah Trouser dan seterusnya.
+Bila yang keluar adalah 1 maka hasil prediksi adalah Trouser dan seterusnya. Sekian, terimakasih.
